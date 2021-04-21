@@ -29,7 +29,7 @@ Use the video HTML tag with a unique attribute to call on Yume.
 
 <video data-type="yume">
 
-<source src="video.mp4" type="video/mp4" />
+	<source src="video.mp4" type="video/mp4" />
 
 </video>
 
@@ -61,13 +61,13 @@ Adding features to the control bar for Yume is easy
 
 function newControl(videoContext, wrapperContext) {
 
-const content = document.createElement('button');
+	const content = document.createElement('button');
 
-content.setAttribute('class', 'timeContainer');
+	content.setAttribute('class', 'timeContainer');
 
-content.innerHTML = 'Hello World!';
+	content.innerHTML = 'Hello World!';
 
-return content; // Has to return an element!
+	return content; // Has to return an element!
 
 }
 
@@ -105,7 +105,7 @@ Adding features that are not on the control bar.
 
 function newModule(videoContext, wrapperContext, controlContext) {
 
-console.log(`Video duration: ${videoContext.duration}`);
+	console.log(`Video duration: ${videoContext.duration}`);
 
 }
 
